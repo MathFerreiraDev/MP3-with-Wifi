@@ -58,7 +58,7 @@ O projeto passou por duas versões: primeiro foi montado em protoboard só pra t
 | <img src="https://github.com/MathFerreiraDev/MP3-with-Wifi/blob/main/assets/ft1.jpg?raw=true" width="500" /> |
 | <img src="https://github.com/MathFerreiraDev/MP3-with-Wifi/blob/main/assets/ft2.jpg?raw=true" width="500" /> |
 | **Vídeo Explicativo** |
-| <a href="https://www.youtube.com/watch?v=WWIJ_E87mHc"> <img width="1920" height="1080" alt="thumb" src="https://github.com/user-attachments/assets/b953d018-7a13-4838-95b2-d2f6e0dd6fc9" /> </a> |
+| <a href="https://www.youtube.com/watch?v=WWIJ_E87mHc"> <img width="1920" height="1080" alt="thumb" src="https://github.com/MathFerreiraDev/MP3-with-Wifi/blob/main/assets/thumb.png?raw=true" /> </a> |
 
 **II) Esquemático:**
 
@@ -68,7 +68,7 @@ O projeto passou por duas versões: primeiro foi montado em protoboard só pra t
 
 <img src="https://github.com/MathFerreiraDev/MP3-with-Wifi/blob/main/assets/pcb.jpg?raw=true" width="800" />
 
-> A primeira versão do projeto, que é a que aparece na foto acima em protoboard, foi montada assim por motivo de prototipação — mais fácil de testar, ajustar fiação e corrigir algo sem precisar refazer solda. A versão em PCB veio depois, já com o circuito validado.
+> A primeira versão do projeto, que é a que aparece na foto acima em protoboard, foi montada assim por motivo de prototipação — mais fácil de testar, ajustar fiação e corrigir algo sem precisar refazer solda. A versão em PCB vem como uma versão definitiva, já com o circuito validado.
 
 ---
 
