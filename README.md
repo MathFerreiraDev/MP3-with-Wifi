@@ -53,15 +53,20 @@ O projeto passou por duas versões: primeiro foi montado em protoboard só pra t
 
 **I) Protótipo em protoboard (versão real, em uso):**
 
-![Dispositivo montado em protoboard](imagens/dispositivo_protoboard.jpg)
+| 📸 Circuito Montado |
+| :---: |
+| <img src="https://github.com/MathFerreiraDev/MP3-with-Wifi/blob/main/assets/ft1.jpg?raw=true" width="500" /> |
+| <img src="https://github.com/MathFerreiraDev/MP3-with-Wifi/blob/main/assets/ft2.jpg?raw=true" width="500" /> |
+| **Vídeo Explicativo** |
+| <a href="https://www.youtube.com/watch?v=WWIJ_E87mHc"> <img width="1920" height="1080" alt="thumb" src="https://github.com/user-attachments/assets/b953d018-7a13-4838-95b2-d2f6e0dd6fc9" /> </a> |
 
 **II) Esquemático:**
 
-![Esquemático do MP3 Player](imagens/esquematico.png)
+<img src="https://github.com/MathFerreiraDev/MP3-with-Wifi/blob/main/assets/esquematico.jpg?raw=true" width="900" />
 
 **III) Versão em PCB:**
 
-![PCB do MP3 Player](imagens/pcb.jpg)
+<img src="https://github.com/MathFerreiraDev/MP3-with-Wifi/blob/main/assets/pcb.jpg?raw=true" width="800" />
 
 > A primeira versão do projeto, que é a que aparece na foto acima em protoboard, foi montada assim por motivo de prototipação — mais fácil de testar, ajustar fiação e corrigir algo sem precisar refazer solda. A versão em PCB veio depois, já com o circuito validado.
 
@@ -79,7 +84,7 @@ Os botões de play/pause, next e prev só funcionam quando a tela do player est�
 - O nome da faixa aparece em cima do "disco" e, se for muito grande pra caber na tela, ele fica rolando tipo letreiro (efeito marquee), avançando um caractere a cada ~300ms até dar a volta completa no nome e recomeçar.
 - O **volume** é lido do potenciômetro e convertido com uma curva não linear (não é uma regra de três direta): isso faz o giro do potenciômetro responder de um jeito mais parecido com o ouvido humano, em vez de pular de "quase mudo" pra "no talo" rapidinho na primeira metade do curso.
 
-![Tela de reprodução no display](imagens/tela_player.jpg)
+<img src="https://github.com/MathFerreiraDev/MP3-with-Wifi/blob/main/assets/display_menu.jpg?raw=true" width="400" />
 
 ---
 
@@ -94,7 +99,7 @@ O "portal cativo" funciona com um `DNSServer` interno que responde qualquer dom�
 
 Enquanto esse modo tá ativo, o display mostra uma tela avisando que o WiFi está no ar e o nome da rede pra conectar. Pra sair do modo WiFi é só clicar de novo no botão de modo, que ele desliga o WiFi e volta pra tela do player (ou pra tela de "sem SD", se for o caso).
 
-![Tela do modo WiFi no display](imagens/tela_wifi.jpg)
+<img src="https://github.com/MathFerreiraDev/MP3-with-Wifi/blob/main/assets/display_wifi.jpg?raw=true" width="400" />
 
 ---
 
@@ -114,7 +119,7 @@ Se o DFPlayer não conseguir achar o cartão SD (ou ele não estiver inserido), 
 
 Nesse estado, os botões de play/next/prev ficam inativos, e o ESP32 fica tentando detectar o cartão de novo sozinho a cada 10 segundos, sem precisar reiniciar nada — assim que o SD aparece, ele já volta direto pra tela do player e começa a tocar a partir da primeira faixa.
 
-![Tela de cartão SD não encontrado](imagens/tela_sem_sd.jpg)
+<img src="https://github.com/MathFerreiraDev/MP3-with-Wifi/blob/main/assets/display_cartao.jpg?raw=true" width="400" />
 
 ---
 
