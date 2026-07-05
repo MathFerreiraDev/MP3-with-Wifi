@@ -14,11 +14,17 @@ O firmware é organizado como uma pequena máquina de estados de tela (`SCR_PLAY
 ## Hardware
 
 - **ESP32 DevKit V1**, é o controlador principal, controla o display, o DFPlayer, lê os botões e ativa o WiFi quando acionado.
+  
 - **DFPlayer Mini**, módulo que lê os MP3 do cartão SD e envia o áudio para o jack de fone. Comunica-se com o ESP32 por serial (Serial2, pinos 16/17), a 9600 bps. O pino **TX do DFPlayer vai direto no RX2 do ESP32**; já o pino **RX do DFPlayer é alimentado pelo TX2 do ESP32 através de um resistor de 1kΩ em série**.
+  
 - **Display OLED 0.96" (SSD1306, 128×64)**, mostra a tela do player. Ligado por I2C (pinos 32/33), endereço `0x3C`.
+  
 - **4 botões**, play/pause, next, prev e o botão de modo (que tem clique único e duplo clique, cada um fazendo uma coisa diferente).
+  
 - **Potenciômetro 10k**, controla o volume (leitura analógica, pino ADC).
+  
 - **Jack de fone P2**, saída de áudio (Left, Right, Mic, Common).
+  
 - **Bateria 18650 + módulo TP4056**, alimenta o circuito inteiro e cuida da recarga via USB.
 
 ### Pinagem
@@ -127,20 +133,6 @@ Nesse estado, os botões de play/next/prev ficam inativos, e o ESP32 fica tentan
 - A animação de "equalizador" e o letreiro do nome da faixa também só rodam/atualizam o display na tela do player (com exceção do letreiro, que continua rolando mesmo com a música pausada).
 
 ---
-
-## Componentes usados
-
-| Componente | Modelo | Função |
-|---|---|---|
-| Microcontrolador | ESP32 DevKit V1 | Controla o player, o display, os botões e o WiFi |
-| Player de áudio | DFPlayer Mini | Lê o cartão SD e toca o MP3 |
-| Resistor | 1 kΩ | Em série entre o TX2 do ESP32 e o RX do DFPlayer, limitando a corrente nessa linha e protegendo o pino contra picos/curtos |
-| Display | OLED 0.96" SSD1306 (I2C) | Mostra a tela do player/WiFi/aviso de SD |
-| Botões | 4x push-button | Play/pause, next, prev e modo |
-| Potenciômetro | 10 kΩ | Ajuste de volume |
-| Saída de áudio | Jack P2 fêmea | Conecta fone ou caixa de som |
-| Bateria | 18650 | Alimentação portátil |
-| Carregador | Módulo TP4056 | Carrega a bateria via USB e alimenta o circuito |
 
 ### Bibliotecas (firmware)
 
