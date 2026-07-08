@@ -73,7 +73,7 @@ O firmware é organizado como uma pequena máquina de estados de tela (`SCR_PLAY
 
 ## Funcionalidades
 
-### 🎵 Controle de faixa
+### Controle de faixa
 
 Os botões de play/pause, next e prev só funcionam quando a tela do player está aberta. Isso é implementado verificando o estado da tela atual antes de executar qualquer ação do botão.
 
@@ -87,7 +87,7 @@ Os botões de play/pause, next e prev só funcionam quando a tela do player est�
 
 ---
 
-### 📶 Modo WiFi
+### Modo WiFi
 
 Um clique simples no botão de modo abre o modo WiFi: o ESP32 cria uma rede própria chamada **`MP3-Player`** (aberta, sem senha) e funciona como um mini servidor web. Ao conectar no celular/PC, abre uma página web local, onde o usuário pode:
 
@@ -102,7 +102,7 @@ Enquanto esse modo está ativo, o display mostra uma tela avisando que o WiFi es
 
 ---
 
-### 🔋 Modo "pseudo desligamento" (baixo consumo)
+### Modo "pseudo desligamento" (baixo consumo)
 
 Dando um **duplo clique** no botão de modo, o player entra em modo de baixo consumo: a tela apaga (comando `SSD1306_DISPLAYOFF`, direto no controlador do OLED), a música pausa, o WiFi desliga (se estiver ligado) e o ESP32 passa a fazer bem pouca coisa, só atualizando a variável do relógio, salvando a hora certa de tempos em tempos (a cada 1 minuto) na memória interna.
 
@@ -112,7 +112,7 @@ Vale lembrar que isso não é um desligamento de verdade, o ESP32 continua ligad
 
 ---
 
-### 🛑 Cartão SD não encontrado
+### Cartão SD não encontrado
 
 Se o DFPlayer não conseguir encontrar o cartão SD (ou ele não estiver inserido), o display mostra uma tela de aviso avisando que nenhum cartão foi detectado. A detecção acontece já na inicialização: o ESP32 tenta se conectar ao DFPlayer em até 3 tentativas (espaçadas em 3 segundos cada, para não travar módulos clone), e depois pergunta ao próprio chip quantas faixas de áudio ele encontrou no cartão inteiro, se a contagem vier zerada, ele tenta ler de novo mais algumas vezes antes de desistir.
 
