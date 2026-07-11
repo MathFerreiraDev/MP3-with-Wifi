@@ -1,7 +1,14 @@
 # MP3 Player com ESP32 e Modo Wifi
 
+> MP3Player portátil com leitor de cartão sd, controles analógicos e integração de uma interface de configurações via wifi.
+>
+> **Matheus Henrique Ferreira - 16910676**
+> 
+> **Disciplina:** Eletrônica Para Computação — [SSC0180] &nbsp;|&nbsp; **Docente:** Eduardo do Valle Simões
 
-## Ideia geral
+---
+
+## Objetivo
 
 O projeto tem em sua essência ser um mp3 player: o ESP32 lê as músicas de um cartão SD (através do módulo DFPlayer Mini), toca no fone/caixa de som pelo jack P2, e mostra tudo em uma tela OLED, hora, nome da faixa, barra de volume, um "disco" e  barras de equalizador. Tem 4 botões (play/pause, next, prev e um botão de modo) e um potenciômetro para volume.
 
